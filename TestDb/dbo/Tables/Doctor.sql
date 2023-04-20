@@ -3,6 +3,7 @@
     [Name]  NVARCHAR (50) NOT NULL,
     [Phone] NVARCHAR (10) NOT NULL,
     [Email] NVARCHAR (50) NOT NULL,
+    [SpecialistId] INT NOT NULL, 
     CONSTRAINT [PK_Doctor] PRIMARY KEY CLUSTERED ([Id] ASC)
 );
 
