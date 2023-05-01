@@ -3,16 +3,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <Name>TestDb</Name>
+    <Name>Database1</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>{5d93a080-fbe8-4f2c-adcc-4f2a7eec2fee}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql150DatabaseSchemaProvider</DSP>
+    <ProjectGuid>{d2a79f6e-5f00-4668-b504-c122e16c8fa0}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
-    <RootNamespace>TestDb</RootNamespace>
-    <AssemblyName>TestDb</AssemblyName>
+    <RootNamespace>Database1</RootNamespace>
+    <AssemblyName>Database1</AssemblyName>
     <ModelCollation>1033, CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
@@ -56,16 +56,5 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
-    <Folder Include="dbo\" />
-    <Folder Include="dbo\Tables\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Build Include="dbo\Tables\Patient.sql" />
-    <Build Include="dbo\Tables\Doctor.sql" />
-    <Build Include="dbo\Tables\Appointment.sql" />
-    <Build Include="dbo\Tables\Specialist.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="TestDb.publish.xml" />
   </ItemGroup>
 </Project>
